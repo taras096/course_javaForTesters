@@ -8,7 +8,7 @@ public class MyFirstProgram {
     Point point1 = new Point(3, 4);
     Point point2 = new Point(7, 8);
 
-    System.out.println("Расстояние между точками равно " + point1.distance(point1, point2));
+    System.out.println("Расстояние между точками равно " + point1.distance(point2));
 
   }
 
