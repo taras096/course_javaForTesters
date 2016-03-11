@@ -33,7 +33,9 @@ public class ContactCreationTests {
   @Test
   public void testContactCreation() {
     addNewContactBtn();
-    fillNewContactForm(new ContactData("first name test ", "last name test", "address test", "1111111", "2222222", "3333333", "4444444", "emailtest1@test.com", "emailtest2@test.com", "emailtest3@test.com"));
+    fillNewContactForm(new ContactData("first name test ", "last name test",
+            "address test", "1111111", "2222222", "3333333", "4444444",
+            "emailtest1@test.com", "emailtest2@test.com", "emailtest3@test.com"));
     submitNewContactCreationBtn();
     returnToHomePage();
   }
