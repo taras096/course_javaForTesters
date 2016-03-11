@@ -24,7 +24,7 @@ public class ContactDeletionTests {
     }
     
     @Test
-    public void testContactDeletion () {
+    public void testContactDeletion() {
         wd.get("http://localhost/addressbook/");
         wd.findElement(By.name("user")).click();
         wd.findElement(By.name("user")).clear();
