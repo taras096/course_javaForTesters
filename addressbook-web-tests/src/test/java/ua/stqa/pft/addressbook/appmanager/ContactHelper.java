@@ -47,4 +47,11 @@ public class ContactHelper extends HelperBase{
     acceptPrompt();
   }
 
+  public void editFirstContactBtn() {
+    click(By.xpath(".//*[@id='maintable']//tr[2]/td[8]/a"));
+  }
+
+  public void submitContactModification() {
+    click(By.xpath(".//input[@value='Update']"));
+  }
 }
