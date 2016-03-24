@@ -64,4 +64,20 @@ public class ContactHelper extends HelperBase{
   public void submitContactModification() {
     click(By.xpath(".//input[@value='Update']"));
   }
+
+  public void returnToHomePage() {
+    click(By.linkText("home"));
+  }
+
+  public void createContact(ContactData contact, boolean b) {
+    addNewContactBtn();
+    fillNewContactForm(contact, b);
+    submitNewContactCreationBtn();
+    returnToHomePage();
+  }
+
+
+  public boolean isThereAContact() {
+    return isElementPresent(By.xpath("//tr[2]//*[@name='selected[]']"));
+  }
 }
