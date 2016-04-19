@@ -18,7 +18,7 @@ public class ContactModificationTests extends TestBase {
               "emailtest1@test.com", "emailtest2@test.com", "emailtest3@test.com", "test1"));
     }
     int before = app.getContactHelper().getContactCount();
-    app.getContactHelper().editFirstContactBtn();
+    app.getContactHelper().editContactBtn(before - 1);
     app.getContactHelper().fillNewContactForm(new ContactData("first name test ", "last name test",
             "address test", "1111111", "2222222", "3333333", "4444444",
             "emailtest1@test.com", "emailtest2@test.com", "emailtest3@test.com", null), false);
